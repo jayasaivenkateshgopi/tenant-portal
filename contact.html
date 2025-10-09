@@ -9,24 +9,28 @@
 </head>
 
 <body class="contact active">
-  <!-- Main section: page layout with sidebar and main content -->
-  <section class="row justify-content-between max-1635 mx-auto ">
+  <!-- Main layout: sidebar + content -->
+  <section class="row justify-content-between max-1635 mx-auto">
 
-    <!-- Sidebar -->
+    <!-- Sidebar area -->
     <aside class="col-2 position-sticky top-50 start-0 z-1 sidebar">
 
-      <!-- Top navigation inside sidebar -->
+      <!-- Header navigation -->
       <header class="position-fixed main-nav max-1635 px-10 px-xl-30">
         <div class="d-flex justify-content-between align-items-center">
           <h3 class="pg-title text-white mb-0">Tenant Portal</h3>
 
-          <!-- Header menu items -->
+          <!-- Top menu -->
           <nav class="portal-menu desc-nav position-relative">
             <ul class="d-flex bg-none align-items-center mb-0">
-              <li class="list-group-item bg-transparent text-white border-0 pe-5"><a href="contact.html">Contact</a></li>
-              <li class="list-group-item bg-transparent text-white border-0 pe-5 me-3"><a href="alerts.html">Alerts</a></li>
+              <li class="list-group-item bg-transparent text-white border-0 pe-5">
+                <a href="contact.html">Contact</a>
+              </li>
+              <li class="list-group-item bg-transparent text-white border-0 pe-5 me-3">
+                <a href="alerts.html">Alerts</a>
+              </li>
               <li class="list-group-item bg-transparent text-white border-0 pe-0 py-0">
-                <!-- Logout button -->
+                <!-- Logout -->
                 <button class="w-100 grd-btn lg-out">
                   <a href="login.html" style="font-weight: 500 !important;">Logout</a>
                 </button>
@@ -36,7 +40,7 @@
         </div>
       </header>
 
-      <!-- Sidebar navigation links -->
+      <!-- Sidebar links -->
       <nav class="side-nav mt-150 pt-20">
         <ul class="d-flex flex-column ps-0 fs-24">
           <li class="list-group-item my-max-content"><a href="home.html">Home</a></li>
@@ -48,16 +52,21 @@
       </nav>
     </aside>
 
-    <!-- Main content area -->
+    <!-- Main content -->
     <div class="col mt-150 pt-20 position-relative z-bottom">
       <div class="main d-flex flex-column gap-3">
 
-        <!-- First row: Maintenance requests and alerts slider -->
+        <!-- Contact cards -->
         <div class="row g-3 align-items-stretch">
+
+          <!-- Maintenance -->
           <div class="col-4 d-flex">
-            <div class="wb w-100 d-flex flex-column justify-content-between bg-silver-pink rounded-40 px-35 py-35 h-100">
+            <div
+              class="wb w-100 d-flex flex-column justify-content-between bg-silver-pink rounded-40 px-35 py-35 h-100">
               <h4 class="fw-800">Maintenance</h4>
-              <div class="logo my-20 mt-40"><img src="/assets/white_bird.png" alt="white bird"/></div>
+              <div class="logo my-20 mt-40">
+                <img src="/assets/white_bird.png" alt="white bird" />
+              </div>
               <div class="comp-info">
                 <h5 class="fw-700 text-black mb-20">White Bird</h5>
                 <div class="details text-black d-flex flex-column space-row-10">
@@ -67,12 +76,16 @@
                 </div>
               </div>
             </div>
-
           </div>
+
+          <!-- Leasing & Billing -->
           <div class="col-4">
-            <div class="gform w-100 d-flex flex-column justify-content-between bg-light-purple rounded-40 px-35 py-35 h-100">
+            <div
+              class="gform w-100 d-flex flex-column justify-content-between bg-light-purple rounded-40 px-35 py-35 h-100">
               <h4 class="fw-800">Leasing & Billing</h4>
-              <div class="logo my-20"><img src="/assets/Gform.png" alt="white bird"/></div>
+              <div class="logo my-20">
+                <img src="/assets/Gform.png" alt="Gform logo" />
+              </div>
               <div class="comp-info">
                 <h5 class="fw-700 text-black mb-20">GFORM</h5>
                 <div class="details text-black d-flex flex-column space-row-10">
@@ -83,10 +96,15 @@
               </div>
             </div>
           </div>
+
+          <!-- Marketing -->
           <div class="col-4">
-            <div class="yesand w-100 d-flex flex-column justify-content-between bg-light-yellow rounded-40 px-35 py-35 h-100">
+            <div
+              class="yesand w-100 d-flex flex-column justify-content-between bg-light-yellow rounded-40 px-35 py-35 h-100">
               <h4 class="fw-800">Marketing</h4>
-              <div class="logo my-20"><img src="/assets/yes&.png" alt="white bird"/></div>
+              <div class="logo my-20">
+                <img src="/assets/yes&.png" alt="yes& logo" />
+              </div>
               <div class="comp-info">
                 <h5 class="fw-700 text-black mb-20">yes&</h5>
                 <div class="details text-black d-flex flex-column space-row-10">
@@ -97,11 +115,11 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
   </section>
 </body>
-
 
 </html>
