@@ -52,8 +52,8 @@ body.active .current-page{ border-color: #B390CA !important; }
 
 
 /* Home Page Styles */
-.lt-vac .info{ background-image: url("../assets/latest_Vacancy_c.png"); background-size: cover; background-repeat: no-repeat ; }
-.lt-eve .info{ background-image: url("../assets/latest_event_c.png"); background-size: cover; background-repeat: no-repeat ; }
+.lt-vac .info{ background-image: url("assets/latest_Vacancy_c.png"); background-size: cover; background-repeat: no-repeat ; }
+.lt-eve .info{ background-image: url("assets/latest_event_c.png"); background-size: cover; background-repeat: no-repeat ; }
 
 .sidebar{ top: 0 !important; height: 100vh; }
 .autoslider [class*="slider-"]{ flex: 0 0 100%; }
