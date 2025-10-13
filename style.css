@@ -102,20 +102,27 @@ body.active .current-page{ border-color: #B390CA !important; }
 
 
 /* Maintenance */
-.schedule-alert-cards .schedule-app{ flex: 0 0 48%; }
-.schedule-alert-cards .alert{ flex: 0 0 52%; }
+.schedule-alert-cards .schedule-app{ flex: 0 0 45%; }
+.schedule-alert-cards .alert{ flex: 0 0 55%; }
 .calendar .weeks-container .week-block .days{ display: flex; justify-content: space-around; }
-.calendar .weeks-container .week-block .days .day{ width: 25px; text-align: center; }
+.calendar .weeks-container .week-block .days .day{ text-align: center; padding: 6px 8px 8px; height: 30px; width: 30px; }
 .calendar-header .nav-btn{ background-color: white; border-radius: 50px; box-shadow: 0 1px 1px 0 rgba(0, 14, 51, 0.5); border: none; height: 30px; max-width: 30px; width: 30px; }
+.months-years-category{ gap: 2px; }
 .months-years-category .month-year-select{ border: none; cursor: pointer; padding: 5px 10px; appearance: none; -webkit-appearance: none; -moz-appearance: none; border-radius: 4px; width: max-content; max-width: max-content; position: relative; }
 .months-years-category .month-year-select:focus{ outline: none; }
 .month-year-select option{ width: max-content; max-width: max-content; }
 .month-container, .year-container{ position: relative; }
-:where(.month-container, .year-container) .fa-solid{ position: absolute; z-index: 2; rotate: 45deg; right: 0; bottom: 5px; color: #B390CA; }
-.month-container .month-year-select{ width: 100%; position: absolute; top: 0; left: 0; opacity: 0; z-index: 1; }
-
-
-
+:where(.month-container, .year-container) .fa-solid{ position: absolute; z-index: 2; rotate: 45deg; right: 8px; bottom: 5px; color: #B390CA; }
+.month-container .month-year-select{ width: 100% !important; position: absolute; top: 0; left: 0; opacity: 0; z-index: 1; }
+.calendar .size-helper{ display: inline-block; }
+.calendar .size-helper, .month-year-select{ border-radius: 4px; background: #FFF; box-shadow: 0 0.656px 0.656px 0 rgba(0, 14, 51, 0.05); padding: 5px 18px 5px 10px !important;  }
+.weekdays .weekday{ flex: 0 0 14.28%; text-align: center; font-weight: 600; color: #000000 !important; padding: 8px; font-family: lexend !important; }
+.weeks-container{ row-gap: 3px !important; }
+.weeks-container .week-block .day{ font-weight: 500; font-family: lexend !important; cursor: pointer; border-radius: 4px; }
+.day.other-month { color: #00000027;  }
+.weeks-container .week-block .day:not(.other-month){ background: var(--Basic-White, #FFF); box-shadow: 0 0.656px 0.656px 0 rgba(0, 14, 51, 0.05);  }
+.weeks-container .week-block .day.today{ background: #B390CA; color: #fff; }
+.weeks-container .week-block .day:hover.day:not(.other-month, .today){ outline: 1.5px solid #B390CA;}
 
 
 
