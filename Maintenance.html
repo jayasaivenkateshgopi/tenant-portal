@@ -23,8 +23,10 @@
           <!-- Header menu items -->
           <nav class="portal-menu desc-nav position-relative">
             <ul class="d-flex bg-none align-items-center mb-0">
-              <li class="list-group-item bg-transparent text-white border-0 pe-5"><a href="contact.html">Contact</a></li>
-              <li class="list-group-item bg-transparent text-white border-0 pe-5 me-3"><a href="alerts.html">Alerts</a></li>
+              <li class="list-group-item bg-transparent text-white border-0 pe-5"><a href="contact.html">Contact</a>
+              </li>
+              <li class="list-group-item bg-transparent text-white border-0 pe-5 me-3"><a href="alerts.html">Alerts</a>
+              </li>
               <li class="list-group-item bg-transparent text-white border-0 pe-0 py-0">
                 <!-- Logout button -->
                 <button class="w-100 grd-btn lg-out">
@@ -49,12 +51,350 @@
     </aside>
 
     <!-- Main content area -->
-    <div class="col mt-150 pt-20 position-relative z-bottom">
+    <div class="col-10 mt-150 pt-20 position-relative z-bottom">
       <div class="main d-flex flex-column gap-3">
-        
+
+        <div class="row g-2 align">
+          <div class="col-9 req-blocks">
+            <div class="row g-2">
+              <div class="col-4">
+                <div class="open-req bg-light-purple px-35 py-35 rounded-40 d-flex flex-column space-row-25 w-100">
+                  <h4 class="fw-800">Open <br> Requests</h4>
+                  <h2 class="fw-800">2</h2>
+                  <button class="dark"><a href="#">View Details</a></button>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="inpro-req bg-light-yellow px-35 py-35 rounded-40 d-flex flex-column space-row-25 w-100">
+                  <h4 class="fw-800">In Progress <br> Requests</h4>
+                  <h2 class="fw-800">1</h2>
+                  <button class="dark"><a href="#">View Details</a></button>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="closed-req bg-light-brown px-35 py-35 rounded-40 d-flex flex-column space-row-25 w-100">
+                  <h4 class="fw-800">Closed <br> Requests</h4>
+                  <h2 class="fw-800">13</h2>
+                  <button class="dark"><a href="#">View Details</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-10">
+              <!-- Recent maintenance requests -->
+              <div class="col-12">
+                <div class="r-req px-35 py-35 bg-silver-pink rounded-40">
+                  <div class="titlebar d-flex justify-content-between align-items-center">
+                    <h4 class="fw-800">Maintenance Requests</h4>
+                    <div class="pymt-status d-none">
+                      <button type="button" class="sts-btn mr-25">open</button>
+                      <button type="button" class="sts-btn mr-25">In Progress</button>
+                      <button type="button" class="sts-btn">Closed</button>
+                    </div>
+                  </div>
+
+                  <!-- Table header -->
+                  <div class="req-data mt-30">
+                    <div class="row g-0 gap-4 align-items-center border-2 border-bottom border-dark pb-3 d-head mb-5">
+                      <div class="col-3 fw-700">Ticket ID</div>
+                      <div class="col fw-700">Date Created</div>
+                      <div class="col fw-700">Status</div>
+                      <div class="col fw-700">Payment Status </div>
+                      <div class="col-3 fw-700"></div>
+                    </div>
+
+                    <!-- Table body with sample rows -->
+                    <div class="d-body d-flex gap-4 flex-column pt-20 mb-30">
+                      <div class="row g-0 gap-4 align-items-center">
+                        <div class="col-3">12345679 <br>Stralsund - Tribseer Center</div>
+                        <div class="col">18/12/2024</div>
+                        <div class="col">OPEN</div>
+                        <div class="col fw-700">PAID</div>
+                        <div class="col-3">
+                          <button class="dark ml-auto d-block"><a href="#">View Details</a></button>
+                        </div>
+                      </div>
+                      <div class="row g-0 gap-4 align-items-center">
+                        <div class="col-3">12345679 <br>Stralsund - Tribseer Center</div>
+                        <div class="col">18/12/2024</div>
+                        <div class="col">IN PROGRESS</div>
+                        <div class="col fw-700">-</div>
+                        <div class="col-3">
+                          <button class="dark ml-auto d-block"><a href="#">View Details</a></button>
+                        </div>
+                      </div>
+                      <div class="row g-0 gap-4 align-items-center">
+                        <div class="col-3">12345679 <br>Stralsund - Tribseer Center</div>
+                        <div class="col">18/12/2024</div>
+                        <div class="col">CLOSED</div>
+                        <div class="col fw-700">OVERDUE</div>
+                        <div class="col-3">
+                          <button class="dark ml-auto d-block"><a href="#">View Details</a></button>
+                        </div>
+                      </div>
+                      <div class="row g-0 gap-4 align-items-center">
+                        <div class="col-3">12345679 <br>Stralsund - Tribseer Center</div>
+                        <div class="col">18/12/2024</div>
+                        <div class="col">CLOSED</div>
+                        <div class="col fw-700">OVERDUE</div>
+                        <div class="col-3">
+                          <button class="dark ml-auto d-block"><a href="#">View Details</a></button>
+                        </div>
+                      </div>
+                      <div class="row g-0 gap-4 align-items-center">
+                        <div class="col-3">12345679 <br>Stralsund - Tribseer Center</div>
+                        <div class="col">18/12/2024</div>
+                        <div class="col">CLOSED</div>
+                        <div class="col fw-700">OVERDUE</div>
+                        <div class="col-3">
+                          <button class="dark ml-auto d-block"><a href="#">View Details</a></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Link to view all requests -->
+                  <a href="#" class="text-dark fw-600 text-decoration-underline d-inline-block">View All</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="schedule-alert-cards d-flex flex-column space-row-10 h-100">
+              <div class="schedule-app bg-white px-35 py-35 rounded-40 col">
+                <h4 class="fw-800 mb-25">Schedule <br> Appointment</h4>
+                <div class="calendar space-row-10 d-flex flex-column">
+
+                  <!-- Header -->
+                  <div class="calendar-header d-flex justify-content-between align-items-center">
+                    <button class="nav-btn" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="months-years-category d-flex">
+                      <div class="select-wrapper month-container">
+                        <span class="size-helper" id="monthSizeHelper"></span>
+                        <select class="month-year-select" id="monthSelect">
+                          <option value="0">January</option>
+                          <option value="1">February</option>
+                          <option value="2">March</option>
+                          <option value="3" selected>April</option>
+                          <option value="4">May</option>
+                          <option value="5">June</option>
+                          <option value="6">July</option>
+                          <option value="7">August</option>
+                          <option value="8">September</option>
+                          <option value="9">October</option>
+                          <option value="10">November</option>
+                          <option value="11">December</option>
+                        </select>
+                        <i class="fa-solid fa-caret-right"></i>
+                      </div>
+                      <div class="year-container">
+                        <select class="month-year-select" id="yearSelect">
+                          <!-- Years will be generated by JavaScript -->
+                        </select>
+                        <i class="fa-solid fa-caret-right"></i>
+                      </div>
+                    </div>
+                    <button class="nav-btn" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+                  </div>
+
+                  <!-- Days of Week -->
+                  <div class="weekdays d-flex justify-content-around">
+                    <div class="weekday">Mo</div>
+                    <div class="weekday">Tu</div>
+                    <div class="weekday">We</div>
+                    <div class="weekday">Th</div>
+                    <div class="weekday">Fr</div>
+                    <div class="weekday">Sa</div>
+                    <div class="weekday">Su</div>
+                  </div>
+
+                  <div class="weeks-container d-flex flex-column justify-content-around" id="weeksContainer"></div>
+                  <!-- Days will be generated by JavaScript -->
+                </div>
+              </div>
+              <div class="autoslider d-flex overflow-hidden h-50 flex-row col">
+                <!-- First alert slide -->
+                <div
+                  class="slider-1 px-35 py-35 bg-rose-red rounded-40 d-flex flex-column justify-content-between position-relative">
+                  <h4 class="fw-800">Alerts</h4>
+                  <div class="content-inner">
+                    <h2 class="fs-38 text-dark mb-25 fw-800">Payment Overdue!</h2>
+                    <p class="text-dark pb-5 mb-20">Ticket ID <strong>XXXXXXXX</strong> is overdue for payment.</p>
+                    <button class="dark"><a href="#">View Details</a></button>
+                  </div>
+                </div>
+                <!-- Second alert slide -->
+                <div
+                  class="slider-2 px-35 py-35 bg-white rounded-40 d-flex flex-column justify-content-between position-relative">
+                  <h4 class="fw-800">Alerts</h4>
+                  <div class="content-inner">
+                    <h2 class="fs-38 text-dark mb-25 fw-800">Upcoming Maintenance</h2>
+                    <p class="text-dark pb-5 mb-20">ID XXXXXXX is due to begin work on <strong>09.09.2025</strong>.</p>
+                    <button class="dark"><a href="#">View Details</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
+
   </section>
+
+  <script>
+        let currentMonth = 3; // April (0-indexed)
+        let currentYear = 2025;
+
+        const monthNames = ["January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"];
+
+        // Function to resize select based on content
+        function resizeSelect(selectId, helperId) {
+            const select = document.getElementById(selectId);
+            const helper = document.getElementById(helperId);
+            const selectedText = select.options[select.selectedIndex].text;
+            helper.textContent = selectedText;
+            select.style.width = (helper.offsetWidth) + 'px';
+        }
+
+        // Generate year options
+        function populateYearSelect() {
+            const yearSelect = document.getElementById('yearSelect');
+            const startYear = 2020;
+            const endYear = 2030;
+
+            for (let year = startYear; year <= endYear; year++) {
+                const option = document.createElement('option');
+                option.value = year;
+                option.textContent = year;
+                if (year === currentYear) {
+                    option.selected = true;
+                }
+                yearSelect.appendChild(option);
+            }
+        }
+
+        function generateCalendar(month, year) {
+            const weeksContainer = document.getElementById('weeksContainer');
+            const monthSelect = document.getElementById('monthSelect');
+            const yearSelect = document.getElementById('yearSelect');
+
+            monthSelect.value = month;
+            yearSelect.value = year;
+
+            // Resize month select to fit content
+            resizeSelect('monthSelect', 'monthSizeHelper');
+
+            weeksContainer.innerHTML = '';
+
+            const firstDay = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+            const daysInPrevMonth = new Date(year, month, 0).getDate();
+
+            // Adjust for Monday start (0 = Sunday, 1 = Monday, etc.)
+            const startDay = firstDay === 0 ? 6 : firstDay - 1;
+
+            // Create array of all days to display
+            const allDays = [];
+
+            // Previous month days
+            for (let i = startDay - 1; i >= 0; i--) {
+                allDays.push({
+                    day: daysInPrevMonth - i,
+                    isOtherMonth: true
+                });
+            }
+
+            // Current month days
+            for (let day = 1; day <= daysInMonth; day++) {
+                const isToday = month === 3 && year === 2025 && day === 7;
+                const displayDay = (month === 3 && year === 2025 && day === 16) ? 0 : day;
+
+                allDays.push({
+                    day: displayDay,
+                    isOtherMonth: false,
+                    isToday: isToday
+                });
+            }
+
+            // Next month days to complete 6 weeks
+            const remainingDays = 42 - allDays.length;
+            for (let day = 1; day <= remainingDays; day++) {
+                allDays.push({
+                    day: day,
+                    isOtherMonth: true
+                });
+            }
+
+            // Create 6 week blocks
+            for (let week = 0; week < 6; week++) {
+                const weekBlock = document.createElement('div');
+                weekBlock.className = 'week-block';
+
+                const daysGrid = document.createElement('div');
+                daysGrid.className = 'days';
+
+                // Add 7 days to this week
+                for (let day = 0; day < 7; day++) {
+                    const dayIndex = week * 7 + day;
+                    const dayData = allDays[dayIndex];
+
+                    const dayDiv = document.createElement('div');
+                    dayDiv.className = 'day';
+
+                    if (dayData.isOtherMonth) {
+                        dayDiv.classList.add('other-month');
+                    }
+
+                    if (dayData.isToday) {
+                        dayDiv.classList.add('today');
+                    }
+
+                    dayDiv.textContent = dayData.day;
+                    daysGrid.appendChild(dayDiv);
+                }
+
+                weekBlock.appendChild(daysGrid);
+                weeksContainer.appendChild(weekBlock);
+            }
+        }
+
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            currentMonth--;
+            if (currentMonth < 0) {
+                currentMonth = 11;
+                currentYear--;
+            }
+            generateCalendar(currentMonth, currentYear);
+        });
+
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            currentMonth++;
+            if (currentMonth > 11) {
+                currentMonth = 0;
+                currentYear++;
+            }
+            generateCalendar(currentMonth, currentYear);
+        });
+
+        document.getElementById('monthSelect').addEventListener('change', (e) => {
+            currentMonth = parseInt(e.target.value);
+            generateCalendar(currentMonth, currentYear);
+        });
+
+        document.getElementById('yearSelect').addEventListener('change', (e) => {
+            currentYear = parseInt(e.target.value);
+            generateCalendar(currentMonth, currentYear);
+        });
+
+        // Initialize calendar
+        populateYearSelect();
+        generateCalendar(currentMonth, currentYear);
+
+        // Initial resize for month only
+        resizeSelect('monthSelect', 'monthSizeHelper');
+    </script>
 </body>
 
 </html>
