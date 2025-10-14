@@ -239,32 +239,38 @@
             <div class="sub-req d-flex bg-mint-green rounded-40 px-35 py-35 justify-content-between ">
               <div class="title-box sub-req-child">
                 <img src="assets/Submit_a_request.png" alt="Submit a Request">
-                <h2 class="fw-800">Submit a Request</h2>
+                <h2 class="fw-800 mt-10">Submit a Request</h2>
               </div>
-              <form action="" class="form-box grid sub-req-child">
-                <div class="title-box">
-                  <label for="title">Title</label>
-                  <input type="text" id="title" name="title" required>
+              <form action="" class="form-box d-flex sub-req-child space-30">
+                <div class="f-inner-right-box d-flex flex-column space-row-30 w-25 justify-content-end">
+                  <div class="title input-box">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" required>
+                  </div>
+
+                  <div class="property input-box">
+                    <label for="property">Property</label>
+                    <input type="text" id="property" name="property" required>
+                  </div>
+
+                  <div class="location input-box">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" required>
+                  </div>
                 </div>
 
-                <div class="propert-box">
-                  <label for="property">Property</label>
-                  <input type="text" id="property" name="property" required>
-                </div>
-
-                <div class="location-box">
-                  <label for="location">Location</label>
-                  <input type="text" id="location" name="location" required>
-                </div>
-
-                <div class="desc-box">
-                  <label for="desc">Description</label>
-                  <textarea id="desc" name="desc" required></textarea>
-                </div>
-
-                <div class="upload-sub-btns">
-                  <input type="file" id="upload" name="upload">
-                  <button class="dark" type="submit"><a href="#">Send</a></button>
+                <div class="f-inner-right-box d-flex flex-column space-row-30 w-75 justify-content-end">
+                  <div class="desc input-box">
+                    <label for="desc">Description</label>
+                    <textarea id="desc" name="desc" required style="resize:none; height: 108px; "></textarea>
+                  </div>
+                  <div class="upload-sub-btns d-flex space-25">
+                    <div class="upload-btn-wrapper position-relative ">
+                      <button class="btn px-20 cursor-pointer border border-dark rounded-50 fw-600">Upload Images<i class="fa-solid fa-arrow-up-from-bracket ml-10"></i></button>
+                      <input type="file" name="myfile" class="position-absolute top-0 start-0 h-100 w-100 opacity-0 cursor-pointer"/>
+                    </div>
+                    <button class="dark px-40" type="submit"><a href="#">Send</a></button>
+                  </div>
                 </div>
               </form>
             </div>
@@ -275,6 +281,7 @@
 
   </section>
 
+  <!-- Calender Script -->
   <script>
     const today = new Date();
     let currentMonth = today.getMonth();
@@ -430,6 +437,45 @@
     // Initial resize for month only
     resizeSelect('monthSelect', 'monthSizeHelper');
   </script>
+
+  <!-- Form script for auto label hide -->
+  <script>// Add this JavaScript to your project
+
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get all input and textarea elements within .input-box
+      const inputs = document.querySelectorAll('.input-box input, .input-box textarea');
+
+      inputs.forEach(input => {
+        // Check on page load if input has value
+        checkAndUpdateLabel(input);
+
+        // Listen for input events
+        input.addEventListener('input', function () {
+          checkAndUpdateLabel(this);
+        });
+
+        // Listen for focus
+        input.addEventListener('focus', function () {
+          checkAndUpdateLabel(this);
+        });
+
+        // Listen for blur
+        input.addEventListener('blur', function () {
+          checkAndUpdateLabel(this);
+        });
+      });
+
+      function checkAndUpdateLabel(element) {
+        const label = element.closest('.input-box').querySelector('label');
+
+        // Hide label if input has value OR if input is focused
+        if (element.value.trim() !== '' || document.activeElement === element) {
+          label.classList.add('hidden');
+        } else {
+          label.classList.remove('hidden');
+        }
+      }
+    });</script>
 </body>
 
 </html>

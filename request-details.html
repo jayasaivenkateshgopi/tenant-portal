@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maintenance</title>
+  <title>Request Details</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -54,190 +54,76 @@
     <div class="col-10 mt-150 pt-20 position-relative z-bottom">
       <div class="main d-flex flex-column gap-3">
 
-        <div class="row g-2 align-items-stretch ">
-          <div class="col-9 req-blocks">
-            <div class="row g-2">
-              <div class="col-4">
-                <div class="open-req bg-light-purple px-35 py-35 rounded-40 d-flex flex-column space-row-30 w-100">
-                  <h4 class="fw-800">Open <br> Requests</h4>
-                  <h2 class="fw-800">2</h2>
-                  <button class="dark"><a href="#">View Details</a></button>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="inpro-req bg-light-yellow px-35 py-35 rounded-40 d-flex flex-column space-row-30 w-100">
-                  <h4 class="fw-800">In Progress <br> Requests</h4>
-                  <h2 class="fw-800">1</h2>
-                  <button class="dark"><a href="#">View Details</a></button>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="closed-req bg-light-brown px-35 py-35 rounded-40 d-flex flex-column space-row-30 w-100">
-                  <h4 class="fw-800">Closed <br> Requests</h4>
-                  <h2 class="fw-800">13</h2>
-                  <button class="dark"><a href="#">View Details</a></button>
+        <div class="row g-2">
+          <div class="col-3">
+            <div class="ticket-details bg-silver-pink rounded-40 px-35 py-35 details-container h-100">
+              <h4 class="fw-800 mb-60">Ticket ID: <span id="maintenence-ticket-id" contenteditable="FALSE">123456</span>
+              </h4>
+              <div class="content-inner">
+                <div
+                  class="details-card d-flex flex-wrap justify-content-between space-col-20 space-row-50 align-items-stretch">
+                  <p class="details"><strong class="d-block">Status:</strong><span class="details-data">OPEN</span></p>
+                  <p class="details"><strong class="d-block">Assignee:</strong><span class="details-data">John
+                      Smith</span></p>
+                  <p class="details"><strong class="d-block">Created on:</strong><span
+                      class="details-data">26/01/2023</span></p>
+                  <p class="details"><strong class="d-block">Receiver:</strong><span class="details-data">John
+                      Doe</span></p>
+                  <p class="details"><strong class="d-block">Closed on:</strong><span
+                      class="details-data">20.09.25</span></p>
                 </div>
               </div>
             </div>
-            <div class="row mt-10">
-              <!-- Recent maintenance requests -->
-              <div class="col-12">
-                <div class="r-req px-35 py-35 bg-silver-pink rounded-40">
-                  <div class="titlebar d-flex justify-content-between align-items-center">
-                    <h4 class="fw-800">Maintenance Requests</h4>
-                    <div class="pymt-status d-none">
-                      <button type="button" class="sts-btn mr-25">open</button>
-                      <button type="button" class="sts-btn mr-25">In Progress</button>
-                      <button type="button" class="sts-btn">Closed</button>
-                    </div>
-                  </div>
-
-                  <!-- Table header -->
-                  <div class="req-data mt-30">
-                    <div class="row g-0 gap-4 align-items-center border-2 border-bottom border-dark pb-3 d-head mb-5">
-                      <div class="col-3 fw-700">Ticket ID</div>
-                      <div class="col fw-700">Date Created</div>
-                      <div class="col fw-700">Status</div>
-                      <div class="col fw-700">Payment Status </div>
-                      <div class="col-3 fw-700"></div>
-                    </div>
-
-                    <!-- Table body with sample rows -->
-                    <div class="d-body d-flex gap-4 flex-column pt-20 mb-30">
-                      <div class="row g-0 gap-4 align-items-center">
-                        <div class="col-3">12345679 <br>Stralsund - Tribseer Center</div>
-                        <div class="col">18/12/2024</div>
-                        <div class="col">OPEN</div>
-                        <div class="col fw-700">PAID</div>
-                        <div class="col-3">
-                          <button class="dark ml-auto d-block"><a href="#">View Details</a></button>
-                        </div>
-                      </div>
-                      <div class="row g-0 gap-4 align-items-center">
-                        <div class="col-3">12345679 <br>Stralsund - Tribseer Center</div>
-                        <div class="col">18/12/2024</div>
-                        <div class="col">IN PROGRESS</div>
-                        <div class="col fw-700">-</div>
-                        <div class="col-3">
-                          <button class="dark ml-auto d-block"><a href="#">View Details</a></button>
-                        </div>
-                      </div>
-                      <div class="row g-0 gap-4 align-items-center">
-                        <div class="col-3">12345679 <br>Stralsund - Tribseer Center</div>
-                        <div class="col">18/12/2024</div>
-                        <div class="col">CLOSED</div>
-                        <div class="col fw-700">OVERDUE</div>
-                        <div class="col-3">
-                          <button class="dark ml-auto d-block"><a href="#">View Details</a></button>
-                        </div>
-                      </div>
-                      <div class="row g-0 gap-4 align-items-center">
-                        <div class="col-3">12345679 <br>Stralsund - Tribseer Center</div>
-                        <div class="col">18/12/2024</div>
-                        <div class="col">CLOSED</div>
-                        <div class="col fw-700">OVERDUE</div>
-                        <div class="col-3">
-                          <button class="dark ml-auto d-block"><a href="#">View Details</a></button>
-                        </div>
-                      </div>
-                      <div class="row g-0 gap-4 align-items-center">
-                        <div class="col-3">12345679 <br>Stralsund - Tribseer Center</div>
-                        <div class="col">18/12/2024</div>
-                        <div class="col">CLOSED</div>
-                        <div class="col fw-700">OVERDUE</div>
-                        <div class="col-3">
-                          <button class="dark ml-auto d-block"><a href="#">View Details</a></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Link to view all requests -->
-                  <a href="#" class="text-dark fw-600 text-decoration-underline d-inline-block">View All</a>
+          </div>
+          <div class="col-6">
+            <div class="request-details bg-light-yellow rounded-40 px-35 py-35 details-container h-100">
+              <h4 class="fw-800 mb-60">Request Details</h4>
+              <div class="content-inner d-flex space-50 position-relative ">
+                <div
+                  class="details-card d-flex flex-wrap justify-content-between space-col-20 space-row-50 align-items-stretch w-50">
+                  <p class="details"><strong class="d-block">Title:</strong><span class="details-data">Lorem ipsum
+                      dolor</span></p>
+                  <p class="details"><strong class="d-block">Location:</strong><span class="details-data">REWE
+                      Erdgeschoss</span></p>
+                  <p class="details"><strong class="d-block">Property Name:</strong><span class="details-data">Rostocker
+                      Chaussee 16</span></p>
+                  <p class="details"><strong class="d-block">Address:</strong><span class="details-data">Stralsund -
+                      Tribseer Center</span></p>
+                </div>
+                <div class="desc-card w-50">
+                  <p class="details"><strong class="d-block">Description</strong><span class="details-data">Lorem ipsum
+                      dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eusimod tincidunt ut dolor sit
+                      amet, consectetuer adipisccing elit, sed diam nonummy nibh.</span></p>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-3">
-            <div class="schedule-alert-cards d-flex flex-column space-row-10 h-100">
-              <div class="schedule-app bg-white px-35 py-35 rounded-40 col">
-                <h4 class="fw-800 mb-25">Schedule <br> Appointment</h4>
-                <div class="calendar space-row-5 d-flex flex-column">
-
-                  <!-- Header -->
-                  <div class="calendar-header d-flex justify-content-between align-items-center">
-                    <button class="nav-btn" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
-                    <div class="months-years-category d-flex">
-                      <div class="select-wrapper month-container">
-                        <span class="size-helper fw-800" id="monthSizeHelper"></span>
-                        <select class="month-year-select fw-600" id="monthSelect">
-                          <option value="0">January</option>
-                          <option value="1">February</option>
-                          <option value="2">March</option>
-                          <option value="3" selected>April</option>
-                          <option value="4">May</option>
-                          <option value="5">June</option>
-                          <option value="6">July</option>
-                          <option value="7">August</option>
-                          <option value="8">September</option>
-                          <option value="9">October</option>
-                          <option value="10">November</option>
-                          <option value="11">December</option>
-                        </select>
-                        <i class="fa-solid fa-caret-right"></i>
-                      </div>
-                      <div class="year-container">
-                        <select class="month-year-select fw-800" id="yearSelect">
-                          <!-- Years will be generated by JavaScript -->
-                        </select>
-                        <i class="fa-solid fa-caret-right"></i>
-                      </div>
-                    </div>
-                    <button class="nav-btn" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
-                  </div>
-
-                  <!-- Days of Week -->
-                  <div class="weekdays d-flex justify-content-around">
-                    <div class="weekday">Mo</div>
-                    <div class="weekday">Tu</div>
-                    <div class="weekday">We</div>
-                    <div class="weekday">Th</div>
-                    <div class="weekday">Fr</div>
-                    <div class="weekday">Sa</div>
-                    <div class="weekday">Su</div>
-                  </div>
-
-                  <div class="weeks-container d-flex flex-column justify-content-around" id="weeksContainer"></div>
-                  <!-- Days will be generated by JavaScript -->
+            <div
+              class="finance-details bg-light-purple rounded-40 px-35 py-35 details-container h-100 d-flex flex-column space-25">
+              <h4 class="fw-800">Finance</h4>
+              <div class="content-inner">
+                <div class="details-card d-flex flex-column space-25">
+                  <p class="details"><strong class="d-block">Costs:</strong><span
+                      class="details-data fs-38 fw-700">€25,000</span></p>
+                  <p class="details"><strong class="d-block">Invoice No.:</strong><span
+                      class="details-data fs-38 fw-700">123456789</span></p>
+                  <p class="details"><strong class="d-block">Invoice Date:</strong><span
+                      class="details-data fs-38 fw-700">20.09.25</span></p>
                 </div>
-              </div>
-              <div class="autoslider d-flex overflow-hidden h-50 flex-row col">
-                <!-- First alert slide -->
-                <div
-                  class="slider-1 px-35 py-35 bg-rose-red rounded-40 d-flex flex-column justify-content-between position-relative">
-                  <h4 class="fw-800">Alerts</h4>
-                  <div class="content-inner">
-                    <h2 class="fs-38 text-dark mb-25 fw-800">Payment Overdue!</h2>
-                    <p class="text-dark pb-5 mb-20">Ticket ID <strong>XXXXXXXX</strong> is overdue for payment.</p>
-                    <button class="dark"><a href="#">View Details</a></button>
-                  </div>
-                </div>
-                <!-- Second alert slide -->
-                <div
-                  class="slider-2 px-35 py-35 bg-white rounded-40 d-flex flex-column justify-content-between position-relative">
-                  <h4 class="fw-800">Alerts</h4>
-                  <div class="content-inner">
-                    <h2 class="fs-38 text-dark mb-25 fw-800">Upcoming Maintenance</h2>
-                    <p class="text-dark pb-5 mb-20">ID XXXXXXX is due to begin work on <strong>09.09.2025</strong>.</p>
-                    <button class="dark"><a href="#">View Details</a></button>
-                  </div>
-                </div>
+
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
+          <div class="col-12">
+            <div class="timeline-details bg-mint-green rounded-40 px-35 py-35 details-container d-flex flex-column space-25">
+              <h4 class="fw-800">Timeline</h4>
 
+              <div class="progress bg-white rounded-50" style="height: 20px;">
+                <div class="progress-bar bg-white" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
